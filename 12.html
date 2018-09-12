@@ -1,0 +1,285 @@
+<html>
+<head>
+	<title>Bài 12</title>
+</head>
+<body>
+<script type="text/javascript">
+var save = new Array()
+var string = prompt("Nhập vào một chuỗi")
+len = string.length
+for(i = 0;i < len;i++){
+	save[i] = 0
+	for(j = 0;j < len;j++){
+		if(string[j] == string[i]){
+			save[i]++
+		}
+	}
+	document.write("Ký tự " + string[i] + " trong dãy có " + save[i] + " ký tự như thế<br><br>")
+
+}
+document.write("Tiếp nào")
+charac = new Object()
+for(i = 0;i<len;i++){ 					//gán từng a,b,c...z
+	if ("a" == string[i]) {
+		charac.a = save[i]
+		break
+	}
+	else charac.a = 0
+}
+for(i = 0;i<len;i++){
+	if ("b" == string[i]) {
+		charac.b = save[i]
+		break
+	}
+	else charac.b = 0
+}
+for(i = 0;i<len;i++){
+	if ("c" == string[i]) {
+		charac.c = save[i]
+		break
+	}
+	else charac.c = 0
+}
+for(i = 0;i<len;i++){
+	if ("d" == string[i]) {
+		charac.d = save[i]
+		break
+	}
+	else charac.d = 0
+}
+for(i = 0;i<len;i++){
+	if ("e" == string[i]) {
+		charac.e = save[i]
+		break
+	}
+	else charac.e = 0
+}
+for(i = 0;i<len;i++){
+	if ("f" == string[i]) {
+		charac.f = save[i]
+		break
+	}
+	else charac.f = 0
+}
+for(i = 0;i<len;i++){
+	if ("g" == string[i]) {
+		charac.g = save[i]
+		break
+	}
+	else charac.g = 0
+}
+for(i = 0;i<len;i++){
+	if ("h" == string[i]) {
+		charac.h = save[i]
+		break
+	}
+	else charac.h = 0
+}
+for(i = 0;i<len;i++){
+	if ("i" == string[i]) {
+		charac.i = save[i]
+		break
+	}
+	else charac.i = 0
+}
+for(i = 0;i<len;i++){
+	if ("j" == string[i]) {
+		charac.j = save[i]
+		break
+	}
+	else charac.j = 0
+}
+for(i = 0;i<len;i++){
+	if ("k" == string[i]) {
+		charac.k = save[i]
+		break
+	}
+	else charac.k = 0
+}
+for(i = 0;i<len;i++){
+	if ("l" == string[i]) {
+		charac.l = save[i]
+		break
+	}
+	else charac.l = 0
+}
+for(i = 0;i<len;i++){
+	if ("m" == string[i]) {
+		charac.m = save[i]
+		break
+	}
+	else charac.m = 0
+}
+for(i = 0;i<len;i++){
+	if ("n" == string[i]) {
+		charac.n = save[i]
+		break
+	}
+	else charac.n = 0
+}
+for(i = 0;i<len;i++){
+	if ("o" == string[i]) {
+		charac.o = save[i]
+		break
+	}
+	else charac.o = 0
+}
+for(i = 0;i<len;i++){
+	if ("p" == string[i]) {
+		charac.p = save[i]
+		break
+	}
+	else charac.p = 0
+}
+for(i = 0;i<len;i++){
+	if ("q" == string[i]) {
+		charac.q = save[i]
+		break
+	}
+	else charac.q = 0
+}
+for(i = 0;i<len;i++){
+	if ("r" == string[i]) {
+		charac.r = save[i]
+		break
+	}
+	else charac.r = 0
+}
+for(i = 0;i<len;i++){
+	if ("s" == string[i]) {
+		charac.s = save[i]
+		break
+	}
+	else charac.s = 0
+}
+for(i = 0;i<len;i++){
+	if ("t" == string[i]) {
+		charac.t = save[i]
+		break
+	}
+	else charac.t = 0
+}
+for(i = 0;i<len;i++){
+	if ("u" == string[i]) {
+		charac.u = save[i]
+		break
+	}
+	else charac.u = 0
+}
+for(i = 0;i<len;i++){
+	if ("v" == string[i]) {
+		charac.v = save[i]
+		break
+	}
+	else charac.v = 0
+}
+for(i = 0;i<len;i++){
+	if ("w" == string[i]) {
+		charac.w = save[i]
+		break
+	}
+	else charac.w = 0
+}
+for(i = 0;i<len;i++){
+	if ("z" == string[i]) {
+		charac.z = save[i]
+		break
+	}
+	else charac.z = 0
+}
+for(i = 0;i<len;i++){
+	if ("x" == string[i]) {
+		charac.zx = save[i]
+		break
+	}
+	else charac.zx = 0
+}
+for(i = 0;i<len;i++){
+	if ("y" == string[i]) {
+		charac.zy = save[i]
+		break
+	}
+	else charac.zy = 0
+}
+if(charac.a !=0){								// in ra số các ký tự tồn tại
+	document.write("<br>a có " + charac.a)	
+}
+if(charac.b !=0){
+	document.write("<br>b có " + charac.b)	
+}
+if(charac.c !=0){
+	document.write("<br>c có " + charac.c)	
+}
+if(charac.d !=0){
+	document.write("<br>d có " + charac.d)	
+}
+if(charac.e !=0){
+	document.write("<br>e có " + charac.e)	
+}
+if(charac.f !=0){
+	document.write("<br>f có " + charac.f)	
+}
+if(charac.g !=0){
+	document.write("<br>g có " + charac.g)	
+}
+if(charac.h !=0){
+	document.write("<br>h có " + charac.h)	
+}
+if(charac.i !=0){
+	document.write("<br>i có " + charac.i)	
+}
+if(charac.j !=0){
+	document.write("<br>j có " + charac.j)	
+}
+if(charac.k !=0){
+	document.write("<br>k có " + charac.k)	
+}
+if(charac.l !=0){
+	document.write("<br>l có " + charac.l)	
+}
+if(charac.m !=0){
+	document.write("<br>m có " + charac.m)	
+}
+if(charac.n !=0){
+	document.write("<br>n có " + charac.n)	
+}
+if(charac.o !=0){
+	document.write("<br>o có " + charac.o)	
+}
+if(charac.p !=0){
+	document.write("<br>p có " + charac.p)	
+}
+if(charac.q !=0){
+	document.write("<br>q có " + charac.q)	
+}
+if(charac.r !=0){
+	document.write("<br>r có " + charac.r)	
+}
+if(charac.s !=0){
+	document.write("<br>s có " + charac.s)	
+}
+if(charac.t !=0){
+	document.write("<br>t có " + charac.t)	
+}
+if(charac.u !=0){
+	document.write("<br>u có " + charac.u)	
+}
+if(charac.v !=0){
+	document.write("<br>v có " + charac.v)	
+}
+if(charac.w !=0){
+	document.write("<br>w có " + charac.w)	
+}
+if(charac.z !=0){
+	document.write("<br>z có " + charac.z)	
+}
+if(charac.zx !=0){
+	document.write("<br>x có " + charac.zx)	
+}
+if(charac.zy !=0){
+	document.write("<br>y có " + charac.zy)	
+}
+
+</script>
+</body>
+</html>

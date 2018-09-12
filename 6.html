@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Bài 6</title>
+</head>
+<body>
+	<p id = "max"></p>
+<script type="text/javascript">
+function max(a,b,c){
+function max(a,b){
+if (a > b) {
+		return a
+	}
+	if (a < b){
+		return b
+	}
+	else
+		return a
+}
+return max(a,max(b,c))
+}
+var a = prompt("Nhap x")
+var b = prompt("Nhap y")
+var c = prompt("Nhap z")
+x = parseFloat(a)
+y = parseFloat(b)
+z = parseFloat(c)
+document.write("Số lớn nhất trong : " + " " + x + " " + y +" "+ z + " là : " + max(x,y,z))
+
+</script>
+</body>
+</html>

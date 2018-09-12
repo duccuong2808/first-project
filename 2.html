@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Bài 2</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a = prompt("Nhập vào tên của bạn: ")
+	len = a.length
+	document.write("Tên của bạn có độ dài: " + len)
+	for(i = len-1;i>=0;i--)
+	{
+		if (a[i] == " ") {
+			t = i;
+			break;					// xác định vị trí bắt đầu của tên
+		}
+	}
+	document.write("<br>First name is : ")
+	for(i =t+1;i<len;i++ ){
+		document.write(a[i])
+	}
+	document.write("<br>Last name is : ")
+	for(i = 0;i<t;i++){
+		document.write(a[i])
+	}
+	
+</script>
+</body>
+</html>

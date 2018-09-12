@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Bài 10</title>
+</head>
+<body>
+<script type="text/javascript">
+var string = new Array()
+var len = new Array()
+var num = prompt("Nhập số chuỗi của mảng")
+function findLongestWord(string){
+	for(i = 0;i<=num-1;i++){
+		m = i + 1
+		var stri = prompt("Nhập số thứ " + m )
+		string[i] = stri
+	}
+	document.write("Các chuỗi vừa nhập là : " + string + "<br>")
+	max = 0
+	for(i = 0;i<=num -1;i++){			//tính max
+		len[i] = string[i].length
+		if(len[i] >= max){
+		max = len[i]
+		}
+	}
+	document.write("Chuỗi dài nhất có : " + max + " ký tự")
+}
+findLongestWord(string)
+
+</script>
+</body>
+</html>

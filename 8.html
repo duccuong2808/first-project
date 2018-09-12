@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Bài 8</title>
+</head>
+<body>
+<script type="text/javascript">
+var string = new Array()
+var num = prompt("Nhập số các số cần tính")
+for(i = 0;i< num;i++){
+	m = i + 1
+	stri = prompt("Nhập số thứ " + m)
+	document.write(stri + " ")
+	string[i] = parseFloat(stri)	//chuyển chuỗi về dạng số tính được bằng phép toán
+}
+function sum(string){
+	sum = 0
+	for(i = 0;i< num;i++){
+		sum = sum + string[i]
+	}
+	document.write("<br>Tổng các số vừa nhập là : " + sum)
+}
+function multiply(string){
+	multiply = 1
+	for(i = 0;i<num;i++){
+		multiply = multiply * string[i]
+	}
+	document.write("<br>Tích các số vừa nhập là : " + multiply)
+}
+sum(string)
+multiply(string)
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Bài 3</title>
+</head>
+<body>
+<script type="text/javascript">
+var a = prompt("Nhập vào chuỗi bất kỳ : ")
+len = a.length
+document.write("Chuối có " + len + " ký tự<br>")
+t=0
+for(i =0;i< len;i++){
+	if(a[i] != " "){	
+		if (a[i] == a[i].toUpperCase() ) {	//ký tự chữ hoa khi uppercase lên vẫn là chính nó
+			t++								// tính số ký tự chữ hoa
+		};
+	}
+}
+document.write("Have " + t + " capital letter in string")
+</script>
+</body>
+</html>

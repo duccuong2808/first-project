@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Bài 4</title>
+</head>
+<body>
+<script type="text/javascript">
+var string = prompt("Xin nhập vào một chuỗi")
+k=0
+len = string.length
+document.write("Độ dài chuỗi vừa nhập : " + len + "<br>")
+for(i = 0;i < len;i++){
+	if(string[i] == string[len-1-i]){			//nếu 1 cặp ký tự đối xứng
+		k++										//cộng thêm 1 đơn vị
+	}
+}
+document.write("Chuỗi " + string + ": ")
+if(k==len){										//cộng từ đầu đến cuối,nếu bằng với độ dài chuỗi kỹ tự ====>>>>> đối xứng
+	document.write("Đối xứng")
+}
+else{
+	document.write("Bất đối xứng")
+}
+</script>
+</body>
+</html>

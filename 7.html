@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Bài 7</title>
+</head>
+<body>
+<script type="text/javascript">
+var string = prompt("Nhập vào một ký tự : ")
+len = string.length
+function tryagain(len){
+	if (len != 1) {
+	alert("Bạn chỉ được nhập một ký tự")
+	location.reload()
+	}
+}
+tryagain(len)
+if (string == "a" || string == "ă" || string == "â" || string == "e" || string == "ê" || string == "i" || string == "o" || string == "ô" || string == "ơ" || string == "u" || string == "ư" || string == "y") {	//nếu ký tự là nguyên âm
+	document.write("Ký tự vừa nhập " + string + " là nguyên âm")
+}
+else
+	document.write("Ký tự vừa nhập " + string + " không phải là nguyên âm")
+</script>
+</body>
+</html>

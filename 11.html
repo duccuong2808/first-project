@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Bài 11</title>
+</head>
+<body>
+<script type="text/javascript">
+var string = new Array()
+var num = prompt("Nhập số chuỗi của mảng")
+for(i = 0;i<=num-1;i++){
+	m = i + 1
+	var stri = prompt("Nhập số thứ " + m )
+	string[i] = stri
+}
+var i = prompt("Nhập số i")
+document.write("Các chuỗi vừa nhập là : " + string + "<br>Các chuối có nhiều hơn " + i + " ký tự là : ")
+function filterLongWord(string,i){
+	for(m = 0;m <= num-1;m++){	//hiện các chuỗi có nhiều hơn i ký tự
+		if (string[m].length > i) {
+			document.write(string[m] + ";")
+		}
+	}
+}
+filterLongWord(string,i)
+</script>
+</body>
+</html>
